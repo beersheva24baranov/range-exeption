@@ -1,4 +1,4 @@
-package telran.range.exceptions;
+package range.exceptions;
 
 public class OutOfRangeMaxValueException extends Exception{
     public OutOfRangeMaxValueException(int max, int value) {

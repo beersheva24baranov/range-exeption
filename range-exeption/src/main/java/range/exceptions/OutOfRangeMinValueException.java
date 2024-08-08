@@ -1,4 +1,4 @@
-package telran.range.exceptions;
+package range.exceptions;
 
 public class OutOfRangeMinValueException extends Exception{
     public OutOfRangeMinValueException(int min, int number) {

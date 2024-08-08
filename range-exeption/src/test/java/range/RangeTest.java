@@ -1,11 +1,11 @@
-package telran.range;
+package range;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import telran.range.exceptions.OutOfRangeMaxValueException;
-import telran.range.exceptions.OutOfRangeMinValueException;
+import range.exceptions.OutOfRangeMaxValueException;
+import range.exceptions.OutOfRangeMinValueException;
 
 public class RangeTest {
     private static final int MIN = 50;

@@ -1,4 +1,4 @@
-package telran.range;
+package range;
 
 import java.util.Random;
 
@@ -18,7 +18,7 @@ public class BallBrokenFloor {
         }
     }
     public int getMinBrokenFloor() {
-        //used only for testing purposes
+       
         return minBrokenFloor;
     }
 }

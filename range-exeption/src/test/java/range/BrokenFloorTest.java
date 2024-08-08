@@ -1,17 +1,26 @@
-package telran.range;
+package range;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class BrokenFloorTest {
-
-private int getMinimalBrokenFloor(BallBrokenFloor bbf) {
-    //TODO
-//Using only method checkFloor to find out minimal broken floor by applying 
-//binary search algorithm
- return -1;
-}
+    public class BrokenFloorTest {
+        private int getMinimalBrokenFloor(BallBrokenFloor bbf) {
+            int start = 1;
+            int finish = Integer.MAX_VALUE;
+            int middle = start + (finish - start) / 2;
+            while (start <= finish) {
+                try {
+                    bbf.checkFloor(middle);
+                    start = middle + 1;
+                } catch (Exception e) {
+                    finish = middle - 1;
+                }
+                middle = start + (finish - start) / 2;
+            }
+            return start;
+        }
+    
 @Test
 void minimalBrokenFloorTest() {
     int [] floors = {200, 17, 1001, 2000};

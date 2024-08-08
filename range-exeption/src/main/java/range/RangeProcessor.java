@@ -1,7 +1,7 @@
-package telran.range;
+package range;
 
-import telran.range.exceptions.OutOfRangeMaxValueException;
-import telran.range.exceptions.OutOfRangeMinValueException;
+import range.exceptions.OutOfRangeMaxValueException;
+import range.exceptions.OutOfRangeMinValueException;
 
 public class RangeProcessor {
     private Range range;
