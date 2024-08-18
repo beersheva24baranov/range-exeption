@@ -28,6 +28,9 @@ public class Range implements Iterable<Integer> {
             throw new OutOfRangeMinValueException(min, number);
         }
     }
+    public void setPredicate(Predicate<Integer> predicate) {
+        this.predicate = predicate;
+    }
     @Override
     public Iterator<Integer> iterator() {
         return new RangeIterator();
