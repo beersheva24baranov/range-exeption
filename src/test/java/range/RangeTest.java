@@ -24,4 +24,5 @@ public class RangeTest {
          () -> range.checkNumber(MAX + 1));
          assertThrowsExactly(OutOfRangeMinValueException.class, () -> range.checkNumber(MIN - 1));
     }
+    
 }
