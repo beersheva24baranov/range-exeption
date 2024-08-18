@@ -33,7 +33,7 @@ public class RangeTest {
         rangeIt.setPredicate((i) -> i % 2 == 0);
     
         Iterator<Integer> it = rangeIt.iterator();
-        Integer[] expected = { 0, 2, 4,6 };
+        Integer[] expected = { 0, 2, 4, 6 };
         Integer[] actual = new Integer[expected.length];;
 
         int index = 0;
