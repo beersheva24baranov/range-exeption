@@ -5,7 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-import java.util.function.Predicate;
 import range.exceptions.OutOfRangeMaxValueException;
 import range.exceptions.OutOfRangeMinValueException;
 
